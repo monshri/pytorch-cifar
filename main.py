@@ -186,7 +186,7 @@ for seed in seeds:
     optimizer = optim.SGD(net.parameters(), lr=1e-1,
                           momentum=0.9, weight_decay=5e-4)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200, verbose=True)
-    for epoch in range(start_epoch, start_epoch+2):
+    for epoch in range(start_epoch, start_epoch+200):
       train(epoch)
       test(epoch)
       scheduler.step()
