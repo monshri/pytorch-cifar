@@ -5,16 +5,13 @@ I'm playing with [PyTorch](http://pytorch.org/) on the CIFAR10 dataset.
 ## Prerequisites
 - Python 3.6+
 - PyTorch 1.0+
-
-## Training
-```
-# Start training with: 
-python main.py
-
-# You can manually resume the training with: 
-python main.py --resume --lr=0.01
-```
-
+## For Training Shufflenet model
+1. Start a new notebook
+2. !git clone https://github.com/monshri/pytorch-cifar.git
+3. cd /content/pytorch-cifar/
+4. from google.colab import drive
+   drive.mount('/content/gdrive')
+5. !python main.py   
 ## Accuracy
 | Model             | Acc.        |
 | ----------------- | ----------- |
